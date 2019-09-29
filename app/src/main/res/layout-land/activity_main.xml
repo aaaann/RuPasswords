@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_resource">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_password"
+        android:textAppearance="@style/ResultText"
+        />
+
+    <TextView
+        android:id="@+id/text_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_resource"
+        android:layout_marginBottom="@dimen/padding_resource"
+        tools:text="Result"
+        android:textColor="@android:color/holo_orange_light"
+        style="@style/gravity" />
+
+    <EditText
+        android:id="@+id/edti_source"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        />
+
+
+</LinearLayout>

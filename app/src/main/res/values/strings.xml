@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">RuPasswords</string>
+    <string name="enter_password">Введите свой пароль на русском</string>
+
+    <string-array name="russians">
+        <item>й</item>
+        <item>ц</item>
+        <item>у</item>
+        <item>к</item>
+        <item>е</item>
+        <item>н</item>
+        <item>г</item>
+        <item>ш</item>
+        <item>щ</item>
+        <item>з</item>
+        <item>х</item>
+        <item>ъ</item>
+    </string-array>
+
+    <string-array name="latin">
+        <item>q</item>
+        <item>w</item>
+        <item>e</item>
+        <item>r</item>
+        <item>t</item>
+        <item>y</item>
+        <item>u</item>
+        <item>i</item>
+        <item>o</item>
+        <item>p</item>
+        <item>[</item>
+        <item>]</item>
+    </string-array>
+
+    <string name="clipboard_title">Pfssword</string>
+    <string name="copied">Password copied</string>
+
+    <plurals name="symbols_count">
+        <item quantity="one">%1$d символ</item>
+        <item quantity="two">символа</item>
+        <item quantity="few">символов</item>
+        <item quantity="many">символов</item>
+        <item quantity="other">символ</item>
+    </plurals>
+
+
+</resources>
