@@ -14,4 +14,12 @@
         <item name="android:gravity">center</item>
     </style>
 
+    <style name="gen_pass_text_on_btn">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
 </resources>

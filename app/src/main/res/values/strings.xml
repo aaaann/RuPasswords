@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">RuPasswords</string>
-    <string name="enter_password">Введите свой пароль на русском</string>
+    <string name="enter_password">Здесь вы можете посмотреть свой пароль, созданный по методу "русское слово в английской раскладке".</string>
 
     <string-array name="russians">
         <item>й</item>
@@ -34,6 +34,7 @@
 
     <string name="clipboard_title">Pfssword</string>
     <string name="copied">Password copied</string>
+    <string name="text_gen_pass">Сгенерируйте новый пароль ему на замену</string>
 
     <plurals name="symbols_count">
         <item quantity="one">%1$d символ</item>
