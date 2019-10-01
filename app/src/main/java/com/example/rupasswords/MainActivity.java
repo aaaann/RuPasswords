@@ -53,8 +53,8 @@ public class MainActivity extends Activity {
 
 
         checkCaps = findViewById(R.id.caps_letters);
-        checkCaps = findViewById(R.id.numbers);
-        checkCaps = findViewById(R.id.symbols);
+        checkNumbers = findViewById(R.id.numbers);
+        checkSymbols = findViewById(R.id.symbols);
         genResultTextView = findViewById(R.id.text_result_gen);
         copyGenPassButton = findViewById(R.id.btn_copy_gen_pass);
         generateButton = findViewById(R.id.generate_password_button);
@@ -67,7 +67,7 @@ public class MainActivity extends Activity {
         copyButton.setEnabled(false);
         copyGenPassButton.setEnabled(false);
         passwordQualityTextView.setText(helper.getPasswordQuality("").getQualityString());
-        passwordQualityIndicator.getDrawable().setLevel(helper.getPasswordQuality("").getQualityLevel());
+        passwordQualityIndicator.getDrawable().setLevel(1000);
 
         sourceEditText.addTextChangedListener(new TextWatcher() {
             @Override
@@ -82,7 +82,8 @@ public class MainActivity extends Activity {
                 copyButton.setEnabled(s.length() > 0);
 
                 passwordQualityTextView.setText(helper.getPasswordQuality(s).getQualityString());
-                passwordQualityIndicator.getDrawable().setLevel(helper.getPasswordQuality(s).getQualityLevel());
+                passwordQualityIndicator.getDrawable().setLevel((helper.getPasswordQuality(s).getQualityLevel() == 0) ? 1000 :
+                        helper.getPasswordQuality(s).getQualityLevel() * 2000);
 
 
             }
@@ -117,16 +118,14 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 boolean useCaps = checkCaps.isChecked();
-                boolean useNumbers = checkCaps.isChecked();
-                boolean useSymbols = checkCaps.isChecked();
+                boolean useNumbers = checkNumbers.isChecked();
+                boolean useSymbols = checkSymbols.isChecked();
 
                 genResultTextView.setText(helper.generatePassword(useCaps, useNumbers,useSymbols, 8));
+                copyGenPassButton.setEnabled(true);
 
             }
         });
-
-
-
 
     }
 

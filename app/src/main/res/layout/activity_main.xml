@@ -16,8 +16,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
             android:text="@string/enter_password"
-            android:textAppearance="@style/ResultText"
-            android:textSize="20sp" />
+            style="@style/base_text"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -34,7 +33,7 @@
                 android:layout_marginTop="@dimen/padding_resource"
                 android:layout_marginBottom="@dimen/padding_resource"
                 android:layout_weight="1"
-                android:textSize="30sp"
+                android:textSize="@dimen/big_text_size"
                 tools:text="Result" />
 
             <ImageButton
@@ -50,8 +49,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:hint="Пароль на русском"
-            android:textSize="20sp"
+            android:hint="@string/hint_rus_pass"
+            android:textSize="@dimen/base_text_size"
+            android:textColor="#000000"
             tools:text="Source" />
 
         <LinearLayout
@@ -67,8 +67,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textColor="@android:color/primary_text_light"
-                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/small_text_size"
                 tools:text="Very good" />
 
             <ImageView
@@ -85,7 +85,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="11dp"
             android:text="@string/text_gen_pass"
-            android:textSize="20sp" />
+            style="@style/base_text"/>
 
 
         <CheckBox
@@ -94,8 +94,8 @@
             android:layout_height="wrap_content"
             android:checked="true"
             android:padding="8dp"
-            android:text="Заглавные"
-            android:textSize="20sp" />
+            android:text="@string/chbx_caps"
+            style="@style/base_text"/>
 
         <CheckBox
             android:id="@+id/numbers"
@@ -103,16 +103,16 @@
             android:layout_height="wrap_content"
             android:checked="true"
             android:padding="8dp"
-            android:text="Цифры"
-            android:textSize="20sp" />
+            android:text="@string/chbx_numbers"
+            style="@style/base_text"/>
 
         <CheckBox
             android:id="@+id/symbols"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:text="Спец. символы"
-            android:textSize="20sp" />
+            android:text="@string/chbx_symbols"
+            style="@style/base_text"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -130,7 +130,7 @@
                 android:layout_marginTop="@dimen/padding_resource"
                 android:layout_marginBottom="@dimen/padding_resource"
                 android:layout_weight="1"
-                android:textSize="30sp"
+                android:textSize="@dimen/big_text_size"
                 tools:text="Result" />
 
             <ImageButton
@@ -148,7 +148,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
             android:background="@android:color/holo_blue_dark"
-            android:text="Генерировать" />
+            android:text="@string/generate_text" />
 
     </LinearLayout>
 </ScrollView>

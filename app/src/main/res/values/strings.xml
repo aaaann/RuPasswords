@@ -35,6 +35,11 @@
     <string name="clipboard_title">Pfssword</string>
     <string name="copied">Password copied</string>
     <string name="text_gen_pass">Сгенерируйте новый пароль ему на замену</string>
+    <string name="generate_text">Генерировать</string>
+    <string name="chbx_symbols">Спец. символы</string>
+    <string name="chbx_numbers">Цифры</string>
+    <string name="chbx_caps">Заглавные</string>
+    <string name="hint_rus_pass">Пароль на русском</string>
 
     <plurals name="symbols_count">
         <item quantity="one">%1$d символ</item>

@@ -14,10 +14,10 @@ import static com.example.rupasswords.PasswordQualityEnum.VERY_GOOD;
 public class PasswordsHelper {
 
     private Map<Integer,String> passSymbols = new HashMap<Integer, String>(){{
-        put(1, "abcdefghijklmnopqrstuvwxyz");
-        put(2, "ABCDEFGHIJKLMNOPQRSTUVWXYZ");
-        put(3, "1234567890");
-        put(4, "!@#$%^&*()_+=-?<>~");
+        put(0, "abcdefghijklmnopqrstuvwxyz");
+        put(1, "ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+        put(2, "1234567890");
+        put(3, "!@#$%^&*()_+=-?<>~");
     }};
 
     private final String[] russians;
@@ -75,7 +75,7 @@ public class PasswordsHelper {
         Random rnd = new Random();
         String charsGroup;
         int numberOfGroups = 1 + (useCaps ? 1 : 0) + (useNumbers ? 1 : 0) + (useSymbols ? 1 : 0);
-        for (int i = 1; i <= numberOfGroups; i++){
+        for (int i = 0; i < numberOfGroups; i++){
             charsGroup = passSymbols.get(i);
             result.append(charsGroup.charAt(rnd.nextInt(charsGroup.length())));
         }
